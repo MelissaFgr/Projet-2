@@ -83,8 +83,13 @@ a {
     padding-top: 16px; 
 }
 
-/****** Headline ***********/
+.menu-1:hover {
+    color: #0065FC;
+    border-top: #0065FC solid 2px;
+    padding-top: 16px; 
+}
 
+/****** Headline ***********/
 .title {
     width: 1340px;
     height: 26px;
@@ -218,6 +223,18 @@ a {
     gap: 10px;
 }
 
+.economic:hover {
+    background-color: #DEEBFF;
+}
+
+.family:hover {
+    background-color: #DEEBFF;
+}
+
+.romantic:hover {
+    background-color: #DEEBFF;
+}
+
 .nuggets:hover {
     background-color: #DEEBFF;
 }
@@ -236,7 +253,6 @@ a {
     width: 24px;
     height: 24px;
 }
-
 
 /****** Hebergements And Populaires ***********/
 .hebergements-and-populaires {
@@ -302,14 +318,20 @@ a {
 }
 
 /****** Footer ***********/
-
 footer {
     display: flex; 
+    background-color: #F2F2F2;  
+    margin-left: 50px;
+    padding: 20px;
 }
 
 h4 {
     font-size: 18px;
     font-weight: bold;
+    margin-block-start: 0px;
+    margin-block-end: 15px;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
 }
 
 .footer-section {
@@ -317,10 +339,7 @@ h4 {
     flex-direction: column;
     flex: 1 0 0;
     align-items: flex-start;
-    align-self: stretch;
-    background-color: #F2F2F2;  
-    padding: 20px;
-    gap: 15px;  
+    align-self: stretch;  
 }
 
 .footer-links {
@@ -331,7 +350,6 @@ h4 {
     align-items: flex-start;
     align-self: stretch;
     gap: 15px;
-    
 }
 
 

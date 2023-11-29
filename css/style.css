@@ -76,22 +76,16 @@ a {
 }
 
 #menu {
+    display: flex;
     float: right;
-    margin-top: 16px;
+    gap: 68px;
 }
 
-.menu {
-    margin-right: 68px;
-    
+#menu a {
+    padding-top: 16px; 
 }
 
-.menu:hover {
-    color: var(--main-color);
-    border-top: var(--main-color) solid 2px;
-    padding-top: 14px; 
-}
-
-.menu-1:hover {
+#menu a:hover {
     color: var(--main-color);
     border-top: var(--main-color) solid 2px;
     padding-top: 14px; 
@@ -113,11 +107,6 @@ a {
     display: flex;
     align-items: center;
     margin-bottom: 35px;
-}
-
-.square-logo {
-    display: flex;
-    align-items: center;
     background-color: var(--main-bg-color);
     border-radius: 15px 0px 0px 15px;
     width: 50px;
@@ -158,6 +147,7 @@ a {
     height: 50px;
     align-items: center;
     margin-bottom: 35px;
+    gap: 15px;
 }
 
 .title-list {
@@ -169,13 +159,7 @@ a {
     gap: 15px;
 }
 
-.puce {
-    display: flex;
-    list-style: none;
-    gap: 15px;
-}
-
-.economic {
+.filtered button {
     display: flex;
     height: 50px;
     align-items: center;
@@ -188,58 +172,7 @@ a {
     gap: 10px;
 }
 
-.family {
-    display: flex;
-    height: 50px;
-    align-items: center;
-    font-size: 17px;
-    font-weight: bolder;
-    border-radius: 25px;
-    border: solid 2px var(--main-bg-color);
-    background-color: #FFF;
-    padding: 4px 19px 4px 19px;
-    gap: 10px;
-}
-
-.romantic {
-    display: flex;
-    height: 50px;
-    align-items: center;
-    font-size: 17px;
-    font-weight: bolder;
-    border-radius: 25px;
-    border: solid 2px var(--main-bg-color);
-    background-color: #FFF;
-    padding: 4px 19px 4px 19px;
-    gap: 10px;
-}
-
-.nuggets {
-    display: flex;
-    height: 50px;
-    align-items: center;
-    font-size: 17px;
-    font-weight: bolder;
-    border-radius: 25px;
-    border: solid 2px var(--main-bg-color);
-    background-color: #FFF;
-    padding: 4px 19px 4px 19px;
-    gap: 10px;
-}
-
-.economic:hover {
-    background-color: var(--filter-bg-color);
-}
-
-.family:hover {
-    background-color: var(--filter-bg-color);
-}
-
-.romantic:hover {
-    background-color: var(--filter-bg-color);
-}
-
-.nuggets:hover {
+.filtered button:hover {
     background-color: var(--filter-bg-color);
 }
 
@@ -282,7 +215,7 @@ a {
     align-self: stretch;
 }
 
-.hebergements-title {
+.section-title {
     font-size: 22px;
 }
 
@@ -412,37 +345,34 @@ a {
 }
 
 .activity-card {
-    width: 298px;
+    width: 25%;
     height: 439px;
     display: flex;
     flex-direction: column;
     border-radius: 20px;
     background: #FFF;
     box-shadow: 0px 3px 15px 0px rgba(0, 0, 0, 0.10);
-    padding-bottom: 15px;
+    margin-bottom: 2%;
     gap: 4px;    
 }
 
 .activity-card img {
-    width: 298px;
-    height: 380px;
+    display: flex;
+    width: 100%;
+    
     align-self: stretch;
     border-radius: 20px 20px 0px 0px;
-    object-fit: cover;
-    
+    object-fit: cover;  
 }
 
 .activity-content {
     display: flex;
-    padding: 20px 19px;
+    margin: 5% 19px;
     align-items: flex-start;
 }
-    
-    
-
+ 
 .activity-title {
-    font-size: 16px;
-    
+    font-size: 16px;   
 }
 
 /****** Footer ***********/
@@ -456,10 +386,6 @@ footer {
 h4 {
     font-size: 18px;
     font-weight: bold;
-    margin-block-start: 0px;
-    margin-block-end: 15px;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
 }
 
 .footer-section {
@@ -467,7 +393,8 @@ h4 {
     flex-direction: column;
     flex: 1 0 0;
     align-items: flex-start;
-    align-self: stretch;  
+    align-self: stretch; 
+    gap: 15px; 
 }
 
 .footer-links {
@@ -521,6 +448,7 @@ h4 {
     .populaires-cards .card-subtitle {
         font-size: 13px;
     }
+
 }
 
 /* Small devices (phones, less than 768px) */
